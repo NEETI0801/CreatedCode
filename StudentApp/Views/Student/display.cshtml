@@ -1,0 +1,11 @@
+﻿<div>
+    @{
+        List<Student> students = ViewData["students"] as List<Student>;
+    <ol>
+                @foreach(Student student2 in students)
+                {
+                    <li>@student2.name</li>
+                }
+       </ol>
+    }
+</div>
